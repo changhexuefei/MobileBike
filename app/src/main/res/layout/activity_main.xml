@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gao.mobilebike.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0b0909">
+
+        <ImageView
+            android:id="@+id/MyCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/menu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="共享单车"
+            android:textColor="#ea2f16"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/find"/>
+
+    </FrameLayout>
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <ImageButton
+        android:id="@+id/btn_my_location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/selector_map"/>
+
+    <Button
+        android:id="@+id/instructions"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#ea2f16"
+        android:gravity="center"
+        android:text="共享单车使用说明"
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
+
+    <ImageButton
+        android:id="@+id/btn_my_help"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/btn_my_location"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/selector_help"/>
+
+        <TextView
+            android:drawablePadding="30dp"
+            android:drawableLeft="@mipmap/scan"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_scan"
+            android:id="@+id/scan"
+            android:enabled="true"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:text="扫码开锁"
+            android:layout_alignBottom="@+id/btn_my_location"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
