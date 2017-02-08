@@ -3,12 +3,13 @@
           package="com.example.gao.mobilebike">
 
     <!-- 添加屏幕及版本支持 -->
-    <!--<supports-screens-->
-        <!--android:anyDensity="true"-->
-        <!--android:largeScreens="true"-->
-        <!--android:normalScreens="true"-->
-        <!--android:resizeable="true"-->
-        <!--android:smallScreens="true"/>-->
+    <!-- <supports-screens -->
+    <!-- android:anyDensity="true" -->
+    <!-- android:largeScreens="true" -->
+    <!-- android:normalScreens="true" -->
+    <!-- android:resizeable="true" -->
+    <!-- android:smallScreens="true"/> -->
+
 
     <!-- SD卡权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -81,6 +82,8 @@
         <activity android:name=".LoginActivity">
         </activity>
         <activity android:name=".DisplayRulesActivity">
+        </activity>
+        <activity android:name=".RechargeActivity">
         </activity>
     </application>
 

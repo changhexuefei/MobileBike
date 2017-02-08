@@ -72,7 +72,7 @@
 
 
     <TextView
-        android:id="@+id/sure"
+        android:id="@+id/confirm"
         android:layout_width="330dp"
         android:layout_height="40dp"
         android:layout_below="@+id/verificationCode"
@@ -87,7 +87,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/sure"
+        android:layout_below="@+id/confirm"
         android:layout_marginTop="10dp"
         android:gravity="center">
 
